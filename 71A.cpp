@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
  
-int n, i, size;
+int n, i, lth;
 string str;
- 
+
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
@@ -12,9 +12,9 @@ int main() {
 	cin>>n;
 	for (i=0; i<n; i++) {
 		cin>>str;
-		size = str.size();
-		if (size > 10) {
-			cout<<str[0]<<size-2<<str[size-1]<<endl;
+		lth = str.size();
+		if (lth > 10) {
+			cout<<str[0]<<lth-2<<str[lth-1]<<endl;
 		} else cout<<str<<endl;
 	}
 	
